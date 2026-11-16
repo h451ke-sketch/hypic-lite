@@ -295,7 +295,7 @@ class _CanvasPainter extends CustomPainter {
         TileMode.clamp,
         Matrix4.identity().storage,
       );
-      canvas.drawVertices(mesh!.toVertices(), paint);
+      canvas.drawVertices(mesh!.toVertices(), BlendMode.srcOver, paint);
     } else {
       final src = Rect.fromLTWH(0, 0, image.width.toDouble(), image.height.toDouble());
       final dst = Rect.fromLTWH(0, 0, size.width, size.height);
