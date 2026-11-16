@@ -28,6 +28,9 @@ jobs:
           channel: 'stable'
           cache: true
 
+      - name: Generate platform files
+        run: flutter create . --org com.example --project-name hypic_lite --platforms=android
+
       - name: Install dependencies
         run: flutter pub get
 
@@ -54,6 +57,9 @@ jobs:
           flutter-version: '3.24.0'
           channel: 'stable'
           cache: true
+
+      - name: Generate platform files
+        run: flutter create . --org com.example --project-name hypic_lite --platforms=ios
 
       - name: Install dependencies
         run: flutter pub get

@@ -7,7 +7,7 @@
     <application
         android:label="醒图Lite"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@android:drawable/ic_menu_camera"
         android:requestLegacyExternalStorage="true">
         <activity
             android:name=".MainActivity"
